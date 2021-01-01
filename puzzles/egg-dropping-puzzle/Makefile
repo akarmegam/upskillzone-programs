@@ -7,3 +7,6 @@ CFLAGS = -g -ggdb -Wall -Werror
 all: $(BIN)
 $(BIN):$(SRC)
 	$(CC) $(CFLAGS) $^ -o $@
+
+clean:
+	rm $(BIN)
